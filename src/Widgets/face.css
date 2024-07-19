@@ -1,0 +1,12 @@
+.face-score-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.face-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}

@@ -1,0 +1,47 @@
+.voice-description{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.desc-icon{
+    width: 60px;
+    height:60px;
+    padding: 10px;
+}
+
+.font-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.desc-para{
+    color: black;
+}
+
+.notCentered-suggestions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.notCentered-remarks{
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sugg-msg-heading{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.tips{
+    color: black;
+}
+

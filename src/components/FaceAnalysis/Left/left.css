@@ -1,0 +1,47 @@
+.left-expression-type{
+    color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.left-expression-type span:nth-of-type(2){
+    font-weight: bold;
+}
+
+.voice-description{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.desc-icon{
+    width: 60px;
+    height:60px;
+    padding: 10px;
+}
+
+.font-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.desc-para{
+    color: black;
+}
+
+.sugg-msg-heading{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.not-left{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    width: 100%;
+}

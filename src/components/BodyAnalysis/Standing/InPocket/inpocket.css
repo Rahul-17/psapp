@@ -1,0 +1,69 @@
+.gesture-display{
+    padding: 10px;
+}
+
+.gesture-display b{
+    font-size: 20px;
+    color: black;
+}
+
+.desc-icon-title{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: black;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+.font-icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+.voice-suggestions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.sugg-msg-heading{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.tips{
+    color: black;
+}
+
+.table-div{
+    padding: 0px 30px;
+    color: black;
+}
+
+table{
+    width: 50%;
+    text-align: center;
+}
+
+th, td {
+    padding: 0 5px; /* Adjust the padding value to increase or decrease the distance */
+  }
+
+  .desc-no-repeat{
+    color: black;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+
+  .not-in-pocket{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }

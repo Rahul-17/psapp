@@ -1,0 +1,181 @@
+.timer-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.timer-main-container{
+    background-color: #AC0067;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.timer-main-container-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    padding: 50px;
+}
+
+.timer-main-container-counter-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-main-container-counter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timer-main-container-counter-buttons{
+    background-color: #00736E;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.timer-main-container-counter-display{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 24px;
+    color: black;
+}
+
+.timer-main-container-counter-next-button{
+    background-color: #00736E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.timer-over-main-container{
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.timer-over-main-container-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.timer-over-main-container-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    max-width: 80%;
+    padding: 50px;
+}
+
+.timer-over-main-container-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.timer-over-main-container-yes{
+    background-color: #00736E;
+    color: white;
+    border: 2px solid #00736E;
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.timer-over-main-container-no{
+    background-color: white;
+    color: green;
+    border: 2px solid #00736E;
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* @media (max-width: 1024px){
+    .timer-over-main-container{
+        margin-top: 350px;
+    }
+
+    .timer-over-main-container-div{
+        margin-top: 100px;
+    }
+
+    .timer-over-main-container-text{
+        font-size: 24px;
+    }
+
+    .timer-over-main-container-buttons{
+        gap: 30px;
+    }
+
+    .timer-over-main-container-yes{
+        font-size: 24px;
+        padding: 20px 50px;
+    }
+
+    .timer-over-main-container-no{
+        font-size: 24px;
+        padding: 20px 50px;
+    }
+
+    .timer-main-container-text{
+        font-size: 24px;
+    }
+
+    .timer-main-container-counter-buttons{
+        background-color: #00736E;
+        border: none;
+        border-radius: 50%;
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .timer-main-container-counter-next-button{
+        font-size: 24px;
+        padding: 20px 50px;
+    }
+
+    .timer-main-container-counter-display {
+        background-color: white;
+        border-radius: 30px;
+        padding: 20px 50px;
+        font-size: 30px;
+        color: black;
+    }
+} */

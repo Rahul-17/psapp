@@ -1,0 +1,7 @@
+{
+  "name": "publicspeaking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

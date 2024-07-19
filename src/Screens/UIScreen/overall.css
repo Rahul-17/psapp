@@ -1,0 +1,309 @@
+/* For desktop view */
+.container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.banner-container {
+    margin-top: 10px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 10px;
+}
+
+.analysis-container {
+    background-color: white;
+    color: white;
+    height: 100%;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.score-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    gap: 0px;
+}
+
+.score-display {
+    width: 25%;
+    border: 2px solid #00736E;
+    height: 50px;
+    border-radius: 10px;
+    color: #AC0067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.score {
+    font-size: 20px;
+}
+
+.icon-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.icon-item {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f0;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item-clicked {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #00736E;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.icon-label {
+    width: 100%;
+    height: 25px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-label-clicked {
+    width: 100%;
+    height: 25px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer {
+    background-color: #AC0067;
+    color: black;
+    padding: 16px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.practice-btn {
+    background-color: white;
+    color: #AC0067;
+    border: 2px solid #AC0067;
+    border-radius: 7px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box-container{
+    /* height: 100%; */
+    background-color: grey;
+    margin-top: 20px;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box-container.center {
+    justify-content: center;
+}
+
+.box-container.start {
+    justify-content: start;
+}
+
+
+
+/* Media Query for smaller devices */
+
+@media (max-width: 360px){
+    .heading-container{
+        margin-top: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+
+    .banner-container{
+        margin-top: 10px;
+    }
+
+    .score-display{
+        width: 45%;
+        height: 25px;
+    }
+
+    .score{
+        font-size: 15px;
+    }
+    .icon-grid {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-top: 50px ;
+        padding-bottom: 20px;
+        margin-top: 0px;
+      }
+      
+    .icon-item {
+        height: 180px;
+        width: 180px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin-right: 5px;
+        margin-left: 5px; /* Adjust this value for spacing between icons */
+    }
+
+    .icon-item-clicked {
+        height: 180px;
+        width: 180px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin-right: 5px;
+        margin-left: 5px; /* Adjust this value for spacing between icons */
+    }
+    .icon-grid::-webkit-scrollbar {
+         display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+    }
+
+  /* Hide scrollbar for Firefox */
+    .icon-grid {
+        scrollbar-width: none;
+    }
+
+  /* Style the scrollbar track if needed */
+    .icon-grid::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+    .box-container{
+        width: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+        /* justify-content: start; */
+        padding: 50px 10px;
+        /* align-items: center; */
+    }
+
+}
+
+/* @media (max-width: 1024px){
+    .score-display{
+        width: 50%;
+    }
+
+    .score{
+        font-size: 30px;
+    }
+
+    .icon-item{
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon-item-clicked{
+        height: 250px;
+        width: 250px;
+    }
+
+    .icon-label{
+        font-size: 24px;
+    }
+
+    .icon-label-clicked{
+        font-size: 24px;
+    }
+
+    .box-container{
+        margin-top: 80px;
+    }
+
+    .practice-btn{
+        padding: 30px 60px;
+        font-size: 28px;
+    }
+
+    .transcript{
+        margin-top: 50px;
+    }
+
+} */
+
+@media (min-width: 1024px){
+    .score-display{
+        width: 50%;
+    }
+}
+
+@media (min-width: 712px){
+    .score-display{
+        width: 50%;
+    }
+}

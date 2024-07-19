@@ -1,0 +1,53 @@
+.score-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+  }
+
+.holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.score-holder{
+  color: #ac0067;
+  font-size: 5rem;
+}
+
+.clicked .score-holder{
+  color: white;
+  font-size: 5rem;
+}
+
+.remark{
+  color: black;
+}
+
+.clicked .remark{
+  color: white;
+}
+
+/* @media (max-width:1024px){
+    .not-clicked{
+      font-size: 18px;
+    }
+
+    .clicked{
+      font-size: 18px;
+    }
+} */
+
+@media (max-width:360px){
+  .not-clicked{
+    font-size: 12px;
+  }
+
+  .clicked{
+    font-size: 12px;
+  }
+}

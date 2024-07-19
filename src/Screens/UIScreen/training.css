@@ -1,0 +1,85 @@
+.training-header {
+    height: 100%;
+    position: relative;
+    background-color: white;
+  }
+  
+  .training-header-text {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .training-content {
+    background-color: #AC0067;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 100px;
+  }
+  
+  .training-centered-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .training-white-background {
+    margin-top: 45px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: white;
+  }
+  
+  .training-inner-div {
+    padding: 16px;
+  }
+  
+  .training-title {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .training-subtitle {
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .training-row {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .training-column {
+    text-align: center;
+  }
+  
+  .training-column img {
+    cursor: pointer;
+  }
+  
+  .training-column .text {
+    color: #147671;
+    margin-top: 20px;
+  }
+  
+  .training-column.disabled {
+    margin-left: 15px;
+    opacity: 0.3;
+  }
+  
+  :where(.css-dev-only-do-not-override-11xg00t).ant-layout.custom-override {
+    background-color: white;
+}
+
+
+  @media (max-width: 1024px){
+    .training-inner-div{
+        height: 100%;
+    }
+  }
