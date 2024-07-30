@@ -16,6 +16,16 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Adjust the Node.js version as needed
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Project
+        run: npm run build # Adjust the build command as needed
+      - name: List Directory Contents
+        run: ls -alh ./dist #
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
