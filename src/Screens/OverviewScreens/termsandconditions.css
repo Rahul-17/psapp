@@ -1,110 +1,49 @@
-/* .terms-conditions-container{
-    height: 100%;
-    overflow-y: auto  ;
-}
-
-.terms-conditions-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.terms-conditions-title span{
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.terms-conditions-main{
-    background-color:#AC0067;
-    color: white;
-    height: 100%;
-    margin-top: 100px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-}
-
-.terms-conditions-main-text{
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.terms-conditions-main-checklist{
-    background-color: white;
-    color: black;
-    padding: 16px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-@media (min-width: 1024px){
-    .terms-conditions-main-text{
-        font-size: 20px;
-    }
-} */
 .terms-conditions-container {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .terms-conditions-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .terms-conditions-title span {
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
-  .terms-conditions-main {
-    background-color: #AC0067;
-    color: white;
-    flex: 1; /* Allow .terms-conditions-main to grow and take up remaining space */
-    margin-top: 100px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .terms-conditions-main-text {
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow-y: auto; /* Add scrolling within .terms-conditions-main-text */
-  }
-  
-  .terms-conditions-main-checklist {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow-y: auto; /* Add scrolling within .terms-conditions-main-checklist */
-  }
-  
-  /* @media (min-width: 1024px) {
-    .terms-conditions-main-text {
-      font-size: 20px;
-    }
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
 
-    .terms-conditions-main-checklist{
-        margin-top: 19px;
-    }
-  } */
+.terms-conditions-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.terms-conditions-title span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.terms-conditions-main {
+  background-color: #AC0067;
+  color: white;
+  flex: 1; /* Allow .terms-conditions-main to grow and take up remaining space */
+  margin-top: 100px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-conditions-main-text {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto; /* Add scrolling within .terms-conditions-main-text */
+}
+
+.terms-conditions-main-checklist {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto; /* Add scrolling within .terms-conditions-main-checklist */
+}

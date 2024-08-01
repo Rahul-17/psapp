@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faVideo, faMicrophoneSlash,faVideoSlash } from '@fortawesome/free-solid-svg-icons';
-import './SwitchAudioAndVideo.css'; // Import CSS file
+import './SwitchAudioAndVideo.css';
 import { useHistory } from 'react-router-dom';
 import { Modal } from 'antd';
 
@@ -10,7 +10,9 @@ const SwitchAudioAndVideo = (props) => {
   const [video, setVideo] = useState(false);
   const history = useHistory();
   const duration = props.location.state.duration.current;
-
+  const recordingEnabled = props.location.state.recordingEnabled;
+  console.log("PERMISSSION", recordingEnabled, props.location.state) //modified by Rahul
+  //modified by Rahul
   const handleVoiceClick = () => {
     navigator.mediaDevices
       .getUserMedia({ audio: true })
@@ -32,11 +34,10 @@ const SwitchAudioAndVideo = (props) => {
         console.error('Error accessing camera:', error);
       });
   };
-
-
+  //modified by Rahul
   const handleClick = () => {
     if(mic === true && video === true){
-      history.push('/camera',{duration: duration});
+      history.push('/camera',{duration: duration,recordingEnabled:recordingEnabled});
     }
     else{
       Modal.warning({

@@ -1,4 +1,3 @@
-
 import React,{ useState,useRef,useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 // import { PieChart } from '@mui/x-charts/PieChart';
@@ -144,6 +143,7 @@ const OverallAnalysis = ( analysisData ) => {
         const totalBodyScore = centeredCount + notCentered;
         const centerPercentage = (centeredCount / totalBodyScore) * 100;
         newBodyScore = parseFloat(centerPercentage.toFixed());
+    
       } else {
         const total = armsOverheadCount + inPocketCount + foldedArmCount + claspCount + rightPose;
         if (total === 0) {
@@ -155,21 +155,21 @@ const OverallAnalysis = ( analysisData ) => {
           const foldedArmsPercentage = Math.round((foldedArmCount / total) * 100);
           const claspPercentage = Math.round((claspCount / total) * 100);
           const rightPercentage = Math.round((rightPose / total) * 100);
+          
           newBodyScore = rightPercentage
         }
       }
-      
-      // newBodyScore = parseFloat(newBodyScore.toFixed(1));
+      newBodyScore = (newBodyScore / 10); //added by Rahul
+      newBodyScore = parseFloat(newBodyScore.toFixed(1)); //uncommented by Rahul
       setBodyScore(newBodyScore);
     
       const total = forward + left + right;
       const forwardPercentage = Math.round((forward / total) * 100);
-      let newFaceScore = (forwardPercentage / 10) * 10;
-      
+      let newFaceScore = (forwardPercentage / 10); //removed *10 by Rahul
       newFaceScore = parseFloat(newFaceScore.toFixed(1));
       setFaceScore(newFaceScore);
-    
-      const newOverallScore = ((newVoiceScore + newBodyScore + newFaceScore) / 30)
+
+      const newOverallScore = ((newVoiceScore + newBodyScore + newFaceScore) / 3) //removed / 30 by Rahul
       setOverallScore(parseFloat(newOverallScore.toFixed(1)));
     }, [personMoment, wpm, fillers, repetitive, centeredCount, notCentered, forward, left, right, foldedArmCount, inPocketCount, armsOverheadCount, claspCount]);
     
@@ -239,7 +239,7 @@ const OverallAnalysis = ( analysisData ) => {
                               alt="Body Icon"
                               className='icon'
                           />
-                          <ScoreIndicator score={bodyScore} maxScore={10} isClicked={!isBodyClicked}/>
+                          <ScoreIndicator score={bodyScore}  isClicked={!isBodyClicked}/>
                           <div className={ isBodyClicked ? 'icon-label' : 'icon-label-clicked'}>Body Analysis</div>
                           </div>
                           <div className={ isFaceClicked ? 'icon-item' : 'icon-item-clicked'} onClick={handleFaceClick}>
@@ -249,7 +249,7 @@ const OverallAnalysis = ( analysisData ) => {
                               alt="Face Icon"
                               className='icon'
                           />
-                          <ScoreIndicator score={faceScore} maxScore={10} isClicked={!isFaceClicked}/>
+                          <ScoreIndicator score={faceScore}  isClicked={!isFaceClicked}/>
                           <div className={ isFaceClicked ? 'icon-label' : 'icon-label-clicked'}>Face Analysis</div>
                           </div>
                       </div>

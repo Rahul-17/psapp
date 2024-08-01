@@ -1,4 +1,9 @@
-/* For desktop view */
+html, body {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
 .container {
     height: 100%;
     overflow-y: auto;
@@ -35,7 +40,7 @@
     align-items: center; */
 }
 
-.score-container{
+.score-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,21 +131,20 @@
     justify-content: center;
 }
 
-
 .footer {
     background-color: #AC0067;
     color: black;
     padding: 16px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    height: 35%;
-    position: absolute;
+    height: auto;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +161,7 @@
     cursor: pointer;
 }
 
-.box-container{
+.box-container {
     /* height: 100%; */
     background-color: grey;
     margin-top: 20px;
@@ -177,28 +181,25 @@
     justify-content: start;
 }
 
-
-
 /* Media Query for smaller devices */
-
-@media (max-width: 360px){
-    .heading-container{
+@media (max-width: 360px) {
+    .heading-container {
         margin-top: 15px;
     }
-    .heading{
+    .heading {
         font-size: 20px;
     }
 
-    .banner-container{
+    .banner-container {
         margin-top: 10px;
     }
 
-    .score-display{
+    .score-display {
         width: 45%;
         height: 25px;
     }
 
-    .score{
+    .score {
         font-size: 15px;
     }
     .icon-grid {
@@ -206,11 +207,11 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        padding-top: 50px ;
+        padding-top: 50px;
         padding-bottom: 20px;
         margin-top: 0px;
-      }
-      
+    }
+
     .icon-item {
         height: 180px;
         width: 180px;
@@ -228,21 +229,22 @@
         margin-right: 5px;
         margin-left: 5px; /* Adjust this value for spacing between icons */
     }
+
     .icon-grid::-webkit-scrollbar {
-         display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+        display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
     }
 
-  /* Hide scrollbar for Firefox */
+    /* Hide scrollbar for Firefox */
     .icon-grid {
         scrollbar-width: none;
     }
 
-  /* Style the scrollbar track if needed */
+    /* Style the scrollbar track if needed */
     .icon-grid::-webkit-scrollbar-track {
         background-color: white;
     }
 
-    .box-container{
+    .box-container {
         width: 100%;
         overflow-x: scroll;
         scroll-behavior: smooth;
@@ -251,59 +253,16 @@
         padding: 50px 10px;
         /* align-items: center; */
     }
-
 }
 
-/* @media (max-width: 1024px){
-    .score-display{
-        width: 50%;
-    }
-
-    .score{
-        font-size: 30px;
-    }
-
-    .icon-item{
-        width: 250px;
-        height: 250px;
-    }
-
-    .icon-item-clicked{
-        height: 250px;
-        width: 250px;
-    }
-
-    .icon-label{
-        font-size: 24px;
-    }
-
-    .icon-label-clicked{
-        font-size: 24px;
-    }
-
-    .box-container{
-        margin-top: 80px;
-    }
-
-    .practice-btn{
-        padding: 30px 60px;
-        font-size: 28px;
-    }
-
-    .transcript{
-        margin-top: 50px;
-    }
-
-} */
-
-@media (min-width: 1024px){
-    .score-display{
+@media (min-width: 1024px) {
+    .score-display {
         width: 50%;
     }
 }
 
-@media (min-width: 712px){
-    .score-display{
+@media (min-width: 712px) {
+    .score-display {
         width: 50%;
     }
 }

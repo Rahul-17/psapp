@@ -1,15 +1,22 @@
-.signup-container{
+body, html {
     height: 100%;
+    overflow-y: auto; /* Add vertical scrollbar */
 }
 
-.signup-title{
+/* Adjust your existing styles */
+.signup-container {
+    height: 100%;
+    overflow-y: auto; /* Ensure this container also scrolls if content exceeds height */
+}
+
+.signup-title {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
 }
 
-.signup-main-container{
+.signup-main-container {
     background-color: #AC0067;
     color: white;
     height: 100%;
@@ -19,7 +26,7 @@
     position: relative;
 }
 
-.signup-main-container-holder{
+.signup-main-container-holder {
     background-color: white;
     color: black;
     padding: 16px;
@@ -35,7 +42,7 @@
     left: 0;
 }
 
-.signup-main-container-holder-lines{
+.signup-main-container-holder-lines {
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@
     justify-content: center;
 }
 
-.signup-main-container-form-button{
+.signup-main-container-form-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,42 +58,9 @@
     margin-top: 15px;
 }
 
-.signup-other-options{
+.signup-other-options {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
 }
-
-/* @media (max-width: 1024px){
-    .signup-username-handler{
-        margin-top: 30px;
-        padding: 12px;
-        font-size: 24px;
-    }
-
-    .signup-email-handler{
-        margin-top: 30px;
-        padding: 12px;
-        font-size: 24px;
-    }
-
-    .signup-password-handler{
-        margin-top: 30px;
-        padding: 12px;
-        font-size: 24px;
-    }
-
-    .signup-button{
-        padding: 30px 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-    }
-
-    .signup-other-options{
-        font-size: 24px;
-    }
-} */
