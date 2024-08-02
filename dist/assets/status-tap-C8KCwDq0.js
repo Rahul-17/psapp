@@ -1,0 +1,3 @@
+import{r as i,a,w as m}from"./index-Jg8pcIH0.js";import{f as c,s as d}from"./index8-Bdb2z9UF.js";import"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0";import"https://cdn.skypack.dev/@mediapipe/tasks-vision";/*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */const h=()=>{const e=window;e.addEventListener("statusTap",()=>{i(()=>{const n=e.innerWidth,s=e.innerHeight,o=document.elementFromPoint(n/2,s/2);if(!o)return;const t=c(o);t&&new Promise(r=>a(t,r)).then(()=>{m(async()=>{t.style.setProperty("--overflow","hidden"),await d(t,300),t.style.removeProperty("--overflow")})})})})};export{h as startStatusTap};
